@@ -11,4 +11,4 @@ Docker must be installed on your system.  See [Docker Installation](https://docs
 6. Using Visual Studio Code, open the `/root/project` directory.
 7. Open a terminal in Visual Studio Code and run `fprime-util generate` to generate the build files and `fprime-util build -j4` to build the project.
 
-The docker container also contains fprime-gds and the Raspberry Pi cross compiler.
+The docker container also contains fprime-gds.
