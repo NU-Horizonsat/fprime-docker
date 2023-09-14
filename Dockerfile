@@ -25,8 +25,3 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
     && printf '\n[ -d "%s" ] && . %s/bin/activate\n' /tmp/fprime-venv /tmp/fprime-venv >> ~/.bashrc \
     && echo 'eval "$(register-python-argcomplete fprime-cli)"' >> ~/.bashrc 
 
-RUN mkdir -p /opt/toolchains \
-    && curl -Ls https://developer.arm.com/-/media/Files/downloads/gnu-a/10.2-2020.11/binrel/gcc-arm-10.2-2020.11-x86_64-aarch64-none-linux-gnu.tar.xz | tar -JC /opt/toolchains --strip-components=1 -x \
-    && curl -Ls https://developer.arm.com/-/media/Files/downloads/gnu-a/10.2-2020.11/binrel/gcc-arm-10.2-2020.11-x86_64-arm-none-linux-gnueabihf.tar.xz | tar -JC /opt/toolchains --strip-components=1 -x \
-    && printf '\nexport ARM_TOOLS_PATH=/opt/toolchains\n' /tmp/fprime-venv /tmp/fprime-venv >> ~/.bashrc 
-
