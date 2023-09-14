@@ -4,7 +4,7 @@ Docker must be installed on your system.  See [Docker Installation](https://docs
 
 ## Setup the docker container
 1. Clone the F` project into a directory of your choice.
-2. Run `docker pull ghcr.io/nu-horizonsat/fprime-docker:latest` to pull the docker image.
+2. Run `docker pull ghcr.io/nu-horizonsat/fprime-docker:main` to pull the docker image.
 3. Run `docker run -it -v <path to fprime project>:/root/project ghcr.io/nu-horizonsat/fprime-docker:main` to start the docker container.  This will mount the fprime project directory to the docker container.  This will allow you to edit the files on your host machine and run the build from the docker container.
 4. Open Visual Studio Code and install the [Remote - Containers](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-containers) extension.
 5. Press Ctrl+Shift+P and select `Remote-Containers: Attach to Running Container...` and select the container that you started in step 3.
