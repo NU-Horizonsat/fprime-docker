@@ -25,3 +25,4 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
     && printf '\n[ -d "%s" ] && . %s/bin/activate\n' /tmp/fprime-venv /tmp/fprime-venv >> ~/.bashrc \
     && echo 'eval "$(register-python-argcomplete fprime-cli)"' >> ~/.bashrc 
 
+
